@@ -1,1 +1,1 @@
-alert("Hello world");
+(()=>{"use strict";console.log("Home loaded"),console.log("Menu loaded"),console.log("Contact loaded")})();
