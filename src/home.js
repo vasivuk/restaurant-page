@@ -1,6 +1,6 @@
 
-function loadHome(){
-    console.log('Home loaded');
+function loadHome(main){
+
 }
 
 export default loadHome;

@@ -16,12 +16,18 @@ function initializeNavbar(){
     const contact = document.createElement('div');
     contact.innerHTML = '<button>Contact</button>';
 
+    const main = document.createElement('div');
+    main.classList.add('main');
+
+    const footer = document.createElement('div');
+    footer.classList.add('footer');
+
     header.appendChild(home);
     header.appendChild(menu);
     header.appendChild(contact);
     content.appendChild(header);
+    content.appendChild(main);
+    content.appendChild(footer);
+    loadHome(main);
 }
 initializeNavbar();
-loadHome();
-loadMenu();
-loadContact();
