@@ -4,10 +4,17 @@ import loadContact from "./contact";
 
 const content = document.querySelector('.content');
 
+const buttonsController = (() => {
+    const menuButton = document.querySelector('#home-btn>button')
+
+    return {menuButton};
+})
+
 function initializeNavbar(){
     const header = document.createElement('div');
     header.classList.add('header');
     const home = document.createElement('div');
+    home.id = 'home-btn';
     home.innerHTML = '<button>Home</button>';
 
     const menu = document.createElement('div');
@@ -21,6 +28,7 @@ function initializeNavbar(){
 
     const footer = document.createElement('div');
     footer.classList.add('footer');
+    footer.textContent = "Photo by Dominika Roseclay from Pexels";
 
     header.appendChild(home);
     header.appendChild(menu);
